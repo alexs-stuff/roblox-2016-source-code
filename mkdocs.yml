@@ -30,5 +30,6 @@ theme:
         name: Switch to system preference
 nav:
     - Home: index.md
-    - Building Contribs: building_contribs.md
-    - Building Source: building.md
+    - Building:
+      - Building Contribs: building_contribs.md
+      - Building Source: building.md

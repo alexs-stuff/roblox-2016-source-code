@@ -1,4 +1,4 @@
-# 🍳 Cookbook for the Contribs
+# Building Contribs
 
 ## 📌 Read This Before You Start
 
@@ -8,7 +8,7 @@
 
 ---
 
-### 🧱 Qt
+### Qt
 
 1. Download [Qt.7z](https://drive.google.com/file/d/10zhRv421d2DUdF7eV-dqR4cIDTZAhiDL/view?usp=drive_link), Extract it into **Contribs** Folder
    * You can skip the other steps if you dont want to build it, its already prebuilt.
@@ -24,7 +24,7 @@
 
 ---
 
-### 🚀 Boost
+### Boost
 
 1. Go to:  
    `<your path>\<your folder name>\Contribs\boost_1_56_0\`
@@ -45,7 +45,7 @@ Once it finishes, you should see something like:
 
 ---
 
-### 🔐 OpenSSL
+### OpenSSL
 
 1. Install [Strawberry Perl](https://strawberryperl.com/) to proceed with the build.
 2. Open **Developer Command Prompt for VS2012**
@@ -66,7 +66,7 @@ Once it finishes, you should see something like:
 
 ---
 
-### 🎮 SDL2
+### SDL2
 
 1. Locate the SDL2 project under:  
    `3rd Party > SDL2`
@@ -85,7 +85,7 @@ To build as a `.LIB`, you don’t need to change anything — just build it as i
 
 ---
 
-### 🌐 libcurl
+### libcurl
 
 1. Locate the libcurl project under:  
    `3rd Party > libcurl`
