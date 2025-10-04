@@ -1,4 +1,4 @@
-﻿# 🍳 Cookbook for the Source
+# 🍳 Cookbook for the Source
 
 ## 📌 Read This Before You Start
 
@@ -28,7 +28,7 @@
    - Value: `<your path>\<your folder name>\Contribs`
 
 4. **Build the required libraries:**
-   - Refer to **[BUILDING_CONTRIBS.md](/BUILDING_CONTRIBS.md)** for instructions.
+   - Refer to **[BUILDING_CONTRIBS.md](building_contribs.md)** for instructions.
 
 5. **Open the solution file:**
    - Launch **Client_2016.sln** inside your `<your folder name>` directory using Visual Studio 2012 or 2022.
