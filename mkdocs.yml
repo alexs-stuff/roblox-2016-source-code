@@ -10,19 +10,25 @@ theme:
     - toc.integrate
     - content.tabs.link
   palette: 
-    # Palette toggle for light mode
-    - scheme: default
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
+        icon: material/link
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 nav:
     - Home: index.md
-    - Building:
-      - Building packages/contribs: building_contribs.md
-      - Building Source: building.md
+    - Building Contribs: building_contribs.md
+    - Building Source: building.md
