@@ -10,7 +10,6 @@ theme:
     - toc.integrate
     - content.tabs.link
   palette: 
-    - accent: red
     # Palette toggle for light mode
     - scheme: default
       toggle:
