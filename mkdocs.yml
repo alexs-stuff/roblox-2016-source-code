@@ -3,7 +3,7 @@ site_name: Roblox 2016 Src docs
 repo_name: alexs-stuff/roblox-2016-source-code
 repo_url: https://github.com/alexs-stuff/roblox-2016-source-code
 
-
+copyright: "Docs by al_ex427</br>Original project by yung.doom"
 
 markdown_extensions:
   - pymdownx.superfences
@@ -19,7 +19,7 @@ theme:
   icon:
     logo: simple/roblox
   features:
-    - toc.integrate
+    - content.code.copy
     - content.tabs
     - content.tabs.link
     - navigation.footer

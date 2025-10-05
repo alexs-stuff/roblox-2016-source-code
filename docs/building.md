@@ -1,76 +1,114 @@
 # Building
 
-!!! note READ THIS BEFORE STARTING!!
+???+ info "REQUIREMENTS"
 
-- `"<your path>"` refers to the location where your source code resides (e.g., `C:\`)
-- `"<your folder name>"` refers to the name of the folder containing the source code (e.g., `Trunk2016`)
-- ⚠️ *Please note:* Technical knowledge is required. We cannot assist with every individual problem you encounter.
+    - [Visual Studio 2012 + Visual Studio 2012 Update 5](https://gofile.io/d/Plze0w)
+    - [Git](https://git-scm.com/)
+
+
+    ??? info "ANDROID BUILD REQUIREMENTS"
+         - [Android Studio](https://developer.android.com/studio)
+         - Android 28 NDK
+         - Android 15 + 28 SDK
+         - Java JDK 21
+    > You can safely ignore the android requirements if you are not building for Android
 
 ---
 
-=== "Building for Windows"
+## Installing Requirements
 
-   1. **Open a Command Prompt with Administrator privileges** and clone the repository using [Git](https://git-scm.com/) like this:
+> If you already have these you can skip directly [Downloading The Project](#downloading-the-project)</br>
+> This assumes you have already downloaded the files, if not read the requirements note to see where to get them
 
-      ```bash
-      git config --system core.longpaths true && cd <your path> && git clone https://github.com/P0L3NARUBA/roblox-2016-source-code
-      ```
+=== "Installing VS2012"
+      1. Mount the VS2012 iso (en_visual_studio_ultimate_2012_x86_dvd_2262106.iso)
+      2. Click on vs_ultimate.exe
+      3. Continue installation as you would
+         * Make sure to only select C++ Foundation Classes if you want to save space
+      4. Once installed click close
+      5. Eject the VS2012 iso and mount VS2012 Update 5 iso (mu_visual_studio_2012_update_5_x86_dvd_6967467.iso)
+      6. Wait for it to complete
 
-      - This method ensures you won’t need to redownload the source code repeatedly. **(Recommended)**
+=== "Installing Git"
+      1. Run the git setup file
+      2. Click next until you get to install part
+      3. Wait for it to install
+      4. Click finish
 
-   2. Install VS2012 and optionally VS2022
-      Download Visual Studio 2012 and Update 5 from <https://gofile.io/d/Plze0w>
-      *(Optional)* [Visual Studio 2022](https://visualstudio.microsoft.com/tr/vs/) for a more modern IDE experience.
-      > You can use either VS2012 or VS2022 to view the solution — both work fine.
-      - During installation, uncheck all optional components **except** *“Microsoft Foundation Classes for C++”* to save disk space.
+---
 
-   3. **Set up an environment variable:**
-      - Name: `CONTRIB_PATH`
-      - Value: `<your path>\<your folder name>\Contribs`
+## Downloading the project
 
-   4. **Build the required libraries:**
-      - Refer to **[BUILDING_CONTRIBS.md](building_contribs.md)** for instructions.
+=== "Using Git (Recommended)"
+      1. Open a Powershell or a Command Prompt instance with administrator perms
+      2. Turn on Git longpaths:
+         Because there are some pretty long paths you can run this command to enable them:
 
-   5. **Open the solution file:**
-      - Launch **Client_2016.sln** inside your `<your folder name>` directory using Visual Studio 2012 or 2022.
-      - If prompted with the “Review Solution Actions” window, press **Cancel**.
+         ```bash
+         git config --system core.longpaths true
+         ```
 
-   6. **Set the Solution Configuration:**
-      - Choose **ReleaseStudio** to build **RobloxStudio**
-      - Choose **ReleaseRCC** to build **RCCService**
-      - Choose **Release** to build **WindowsClient**
-      - Other available configurations: **Debug**, **DebugRCC**, **DebugStudio**
+      3. Go into the path you want to want to download it into. (eg. `C:\Users\Alex\Documents`)
+      4. Cloning the project
+         Run
 
-   7. **Pre-build dependencies (required before building RCCService, RobloxStudio, or WindowsClient):**
-      - 3rd Party:
-         - `boost.static`
-         - `zlib`
-         - `libcurl` — follow **BUILDING_CONTRIBS.md** (skip if already compiled)
-         - `SDL2` — follow **BUILDING_CONTRIBS.md** (skip if already compiled)
-      - gSOAP:
-         - `soapcpp2`
-         - `wsdl2h`
-      - Shaders:
-         - `ShaderCompiler`
-         - Rendering:
-         - `LibOVR`
-      - Core Components:
-         - `qtnribbon`
-         - `sgCore`
-         - `CoreScriptConverter2` (only needed for **Release/Debug** when building **WindowsClient**)
+         ```bash
+         git clone https://github.com/alexs-stuff/roblox-2016-source-code
+         ```
 
-   8. **Build your desired project:**
-      - Right-click on **RCCService**, **RobloxStudio**, or **WindowsClient** in Solution Explorer
-      - Select **Build**
+         to clone and wait for it to finish
+      5. Go into the directory it cloned to. (eg. `C:\Users\Alex\Documents\roblox-2016-source-code`)
 
-=== "Building for Android"
+=== "Downloading as a zip"
+      1. On the repo click Code then Download Zip and then wait until it finishes
+      2. Extract it somewhere eg. `C:\Users\Alex\Documents`
+      3. Go into the directory it extracted to (eg. `C:\Users\Alex\Documents\roblox-2016-source-code\roblox-2016-source-code`)
 
-   1. You need to install [Android Studio](https://developer.android.com/studio), do so.
-   2. Install Android 28 NDK, Android 15 and 28 SDK from the Android Studio
-   3. Find the local.properties file, Open in notepad and set the correct path to the SDK folder.
+## Building the project
 
-      - Build the libroblox.so for your platform, use the Legacy mode.
+### Building for Windows
 
-   4. Pack the OBB Assets
-   5. Install Java JDK 21
-   6. Build the RobloxHybrid and after that build the APK!
+> This assumes you have already built/installed the required project depedencies, if not go to [Building Contribs](building_contribs.md)
+
+#### <h3>Open project solution</h3>
+
+> If you have VS2022 installed you can view using that
+Click on **Client_2016.sln** inside your project directory
+!!! warning
+      If it prompts you with "Review Solution Actions" then ignore it by pressing Cancel
+
+#### <h3>Building Roblox depedencies</h3>
+
+   These depdencies are required before building any of the projects (RCCService, RobloxStudio, WindowsClient)
+
+   It is recommended to follow the provided order
+
+   To build the target dependency right click and click build
+
+- 3rd Party:
+      - `boost.static`
+      - `zlib`
+- gSOAP:
+      - `soapcpp2`
+      - `wsdl2h`
+- Shaders:
+      - `ShaderCompiler`
+- Rendering:
+      - `LibOVR`
+- Core Components:
+      - `qtnribbon`
+      - `sgCore`
+      - `CoreScriptConverter2` (only needed for **Release/Debug** when building **WindowsClient**)
+
+#### <h3>Building your target project</h3>
+Right click on your target project (Must be WindowsClient, RobloxStudio or RCCService) and click build
+
+### Building for Android
+
+> This assumes you have already built/installed the Android Depedencies, if not go to [Installing Requirements](#installing-requirements)
+
+1. Open the `local.properties` file found in `<Your Project Directory>/Android/` in any text editor
+2. Build libroblox.so for your platform with legacy mode
+3. Pack the OBB assets
+4. Build RobloxHybrid
+5. then Build APK

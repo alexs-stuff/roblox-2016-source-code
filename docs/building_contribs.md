@@ -1,6 +1,6 @@
 # Building Contribs
 
-??? note READ THIS BEFORE STARTING!!
+!!! "note READ THIS BEFORE STARTING!!"
 
 - `"<your path>"` refers to the location where your source code resides (e.g., `C:\`)
 - `"<your folder name>"` refers to the name of the folder containing the source code (e.g., `Trunk2016`)
@@ -10,7 +10,7 @@
 
 ## Qt
 
-=== "Using the prebuilt copy"
+=== "Prebuit Copy (Recommended)"
 
    1. Download **Qt.7z** from <https://gofile.io/d/Plze0w>
    2. Extract it in the Contribs/ folder
