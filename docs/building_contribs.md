@@ -8,25 +8,16 @@
 
 ---
 
-### Qt
+## Qt
 
 === "Using the prebuilt copy"
-   1. Download **Qt.7z** from https://gofile.io/d/Plze0w
+
+   1. Download **Qt.7z** from <https://gofile.io/d/Plze0w>
    2. Extract it in the Contribs/ folder
 
-<!--=== "Building yourself (not recommended)"
-   1. Open **2012 x86 Native Tools Command Prompt**
-   2. Navigate (`cd`) to:  `<your path>\<your folder name>\Contribs\Qt\4.8.5\win_VS2012`
-   3. Run the following command:
-   ```sh
-      configure -make nmake -platform win32-msvc2012 -prefix `<your path>`\\`<your folder name>`\\Contribs\\Qt\\4.8.5\\win_VS2012 -opensource -confirm-license -opengl desktop -nomake examples -nomake tests -webkit -xmlpatterns
-   ```
-   4. Type `nmake confclean` to make sure we're starting clean.
-   5. When everything completes, run `nmake` and take a deep breath — this step takes **a lot** of time.
--->
 ---
 
-### Boost
+## Boost
 
 1. Go to:  
    `<your path>\<your folder name>\Contribs\boost_1_56_0\`
@@ -39,7 +30,7 @@
 
 Once it finishes, you should see something like:
 
-```
+```log
 ...failed updating 56 targets...
 ...skipped 8 targets...
 ...updated 1095 targets...
@@ -47,7 +38,7 @@ Once it finishes, you should see something like:
 
 ---
 
-### OpenSSL
+## OpenSSL
 
 1. Install [Strawberry Perl](https://strawberryperl.com/) to proceed with the build.
 2. Open **Developer Command Prompt for VS2012**
@@ -57,9 +48,11 @@ Once it finishes, you should see something like:
    `perl Configure VC-WIN32`
    - If you get an error like `'perl' is not recognized...`, make sure Strawberry Perl was installed correctly.
 5. Next, run:
-   ```
+
+   ```cmd
    ms\32all.bat
    ```
+
 6. Create a folder named `openssl` inside `<your folder name>`
 7. When the build completes, go to:  
    `<your path>\<your folder name>\Contribs\openssl\out32dll`  
@@ -68,13 +61,14 @@ Once it finishes, you should see something like:
 
 ---
 
-### SDL2
+## SDL2
 
 1. Locate the SDL2 project under:  
    `3rd Party > SDL2`
 2. Right-click the project and select **Build**
 
 To build SDL2 as a `.DLL`:
+
 - Go to **Properties**
 - Change:
   - **Target Extension** → `.dll`
@@ -87,13 +81,14 @@ To build as a `.LIB`, you don’t need to change anything — just build it as i
 
 ---
 
-### libcurl
+## libcurl
 
 1. Locate the libcurl project under:  
    `3rd Party > libcurl`
 2. Right-click the project and select **Build**
 
 To build libcurl as a `.LIB`:
+
 - Go to **Properties**
 - Change:
   - **Target Extension** → `.lib`

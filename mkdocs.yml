@@ -20,6 +20,7 @@ theme:
     logo: simple/roblox
   features:
     - toc.integrate
+    - content.tabs
     - content.tabs.link
     - navigation.footer
   font:
