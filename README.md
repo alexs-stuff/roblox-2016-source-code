@@ -1,5 +1,8 @@
 # Roblox 2016 Source code (REUPLOAD)
 this is a reupload of yung.dooms roblox-2016-source-code which privated or deleted this repo.
+
+Docs avaliable at: https://alexs-stuff.github.io/roblox-2016-source-code/
+
 discord server at: https://discord.gg/E8DnA6ZjJP
 
 # ORIGINAL (modified) README

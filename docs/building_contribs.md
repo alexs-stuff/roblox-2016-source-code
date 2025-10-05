@@ -10,17 +10,20 @@
 
 ### Qt
 
-1. Download [Qt.7z](https://drive.google.com/file/d/10zhRv421d2DUdF7eV-dqR4cIDTZAhiDL/view?usp=drive_link), Extract it into **Contribs** Folder
-   * You can skip the other steps if you dont want to build it, its already prebuilt.
-2. Open **2012 x86 Native Tools Command Prompt**
-3. Navigate (`cd`) to:  
+--- "Using the prebuilt copy"
+1. Download **Qt.7z** from https://gofile.io/d/Plze0w
+2. Extract it in the Contribs/ folder
+
+--- "Building yourself (not recommended)""
+1. Open **2012 x86 Native Tools Command Prompt**
+2. Navigate (`cd`) to:  
    `<your path>\<your folder name>\Contribs\Qt\4.8.5\win_VS2012`
-4. Run the following command:
+3. Run the following command:
    ```sh
    configure -make nmake -platform win32-msvc2012 -prefix <your path>\<your folder name>\Contribs\Qt\4.8.5\win_VS2012 -opensource -confirm-license -opengl desktop -nomake examples -nomake tests -webkit -xmlpatterns
    ```
-5. Type `nmake confclean` to make sure we're starting clean.
-6. When everything completes, run `nmake` and take a deep breath — this step takes **a lot** of time.
+4. Type `nmake confclean` to make sure we're starting clean.
+5. When everything completes, run `nmake` and take a deep breath — this step takes **a lot** of time.
 
 ---
 

@@ -1,6 +1,6 @@
 # Building
 
-## 📌 Read This Before You Start
+## READ THIS BEFORE STARTING!!
 
 - `"<your path>"` refers to the location where your source code resides (e.g., `C:\`)
 - `"<your folder name>"` refers to the name of the folder containing the source code (e.g., `Trunk2016`)
@@ -8,7 +8,7 @@
 
 ---
 
-### 🛠️ Setup Instructions for Windows
+--- "Building for Windows"
 
 1. **Open a Command Prompt with Administrator privileges** and clone the repository using [Git](https://git-scm.com/) like this:
    ```bash
@@ -16,7 +16,7 @@
    ```
    - This method ensures you won’t need to redownload the source code repeatedly. **(Recommended)**
 
-2. **Download and install these tools:**
+## 1. Install VS2012 and optionally VS2022
    - [Visual Studio 2012](https://drive.google.com/file/d/1XoA5Av_6OedTwGi_ebTb_XsQ7-RmEKSd/view?usp=sharing)
    - [Visual Studio 2012 Update 5](https://drive.google.com/file/d/1_rrwnITjCl-kcqEKTQWUDJgEegAcKAM6/view?usp=sharing)
    - *(Optional)* [Visual Studio 2022](https://visualstudio.microsoft.com/tr/vs/) for a more modern IDE experience.
@@ -62,7 +62,7 @@
    - Right-click on **RCCService**, **RobloxStudio**, or **WindowsClient** in Solution Explorer
    - Select **Build**
 
-### 🛠️ Setup Instructions for Android
+--- "Building for Android"
 
 1. You need to install [Android Studio](https://developer.android.com/studio), do so.
 2. Install Android 28 NDK, Android 15 and 28 SDK from the Android Studio

@@ -1,4 +1,8 @@
-site_name: RBX2016 docs
+site_name: Roblox 2016 Src docs
+# Repository
+repo_name: alexs-stuff/roblox-2016-source-code
+repo_url: https://github.com/alexs-stuff/roblox-2016-source-code
+
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -33,3 +37,4 @@ nav:
     - Building:
       - Building Contribs: building_contribs.md
       - Building Source: building.md
+    - Features: features.md
