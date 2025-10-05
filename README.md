@@ -2,14 +2,8 @@
 this is a reupload of yung.dooms roblox-2016-source-code which privated or deleted this repo.
 discord server at: https://discord.gg/E8DnA6ZjJP
 
-# ORIGINAL README
+# ORIGINAL (modified) README
 ![My *handmade* Roblox Logo](https://github.com/user-attachments/assets/ced623cd-6692-4759-8e46-e9453f5454fc)
-
-<p align="center">
-<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/P0L3NARUBA/roblox-2016-source-code">
-<img alt="GitHub Release" src="https://img.shields.io/github/v/release/P0L3NARUBA/roblox-2016-source-code?color=violet">
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/P0L3NARUBA/roblox-2016-source-code/master">
-</p>
 
 # Roblox 2016 Source Code
 
@@ -86,8 +80,5 @@ The **[pixel-lighting](https://github.com/P0L3NARUBA/roblox-2016-source-code/tre
   - [ ] Ensure support for the latest C/C++ standards (C++17 or later)  
   - [ ] Enable 64-bit support across all applicable projects
 
-## ⚠️ Current Problems
-- Undo/Redo does not handle `Color3` properties accurately; they often revert to the nearest `BrickColor` value.
-  - This can lead to inconsistencies, especially with `BodyColors`.
 
 ---
