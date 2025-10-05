@@ -8,6 +8,14 @@
 
 ---
 
+
+=== "Open me in a new tab ..."
+
+=== "... or me ..."
+
+=== "... or even me"
+
+<!--
 === "Building for Windows"
 
    1. **Open a Command Prompt with Administrator privileges** and clone the repository using [Git](https://git-scm.com/) like this:
@@ -73,3 +81,4 @@
    5. Install Java JDK 21
    6. Build the RobloxHybrid and after that build the APK!
 
+-->
