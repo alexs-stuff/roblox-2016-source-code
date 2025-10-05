@@ -10,70 +10,66 @@
 
 === "Building for Windows"
 
-1. **Open a Command Prompt with Administrator privileges** and clone the repository using [Git](https://git-scm.com/) like this:
-   ```bash
-   git config --system core.longpaths true && cd <your path> && git clone https://github.com/P0L3NARUBA/roblox-2016-source-code
-   ```
-   - This method ensures you won’t need to redownload the source code repeatedly. **(Recommended)**
+   1. **Open a Command Prompt with Administrator privileges** and clone the repository using [Git](https://git-scm.com/) like this:
+      ```bash
+         git config --system core.longpaths true && cd <your path> && git clone https://github.com/P0L3NARUBA/roblox-2016-source-code
+      ```
+      - This method ensures you won’t need to redownload the source code repeatedly. **(Recommended)**
 
-## 1. Install VS2012 and optionally VS2022
-   Download Visual Studio 2012 and Update 5 from https://gofile.io/d/Plze0w
-   *(Optional)* [Visual Studio 2022](https://visualstudio.microsoft.com/tr/vs/) for a more modern IDE experience.
-     > You can use either VS2012 or VS2022 to view the solution — both work fine.
-   - During installation, uncheck all optional components **except** _“Microsoft Foundation Classes for C++”_ to save disk space.
+   ## 1. Install VS2012 and optionally VS2022
+      Download Visual Studio 2012 and Update 5 from https://gofile.io/d/Plze0w
+      *(Optional)* [Visual Studio 2022](https://visualstudio.microsoft.com/tr/vs/) for a more modern IDE experience.
+      > You can use either VS2012 or VS2022 to view the solution — both work fine.
+      - During installation, uncheck all optional components **except** _“Microsoft Foundation Classes for C++”_ to save disk space.
 
-3. **Set up an environment variable:**
-   - Name: `CONTRIB_PATH`
-   - Value: `<your path>\<your folder name>\Contribs`
+   3. **Set up an environment variable:**
+      - Name: `CONTRIB_PATH`
+      - Value: `<your path>\<your folder name>\Contribs`
 
-4. **Build the required libraries:**
-   - Refer to **[BUILDING_CONTRIBS.md](building_contribs.md)** for instructions.
+   4. **Build the required libraries:**
+      - Refer to **[BUILDING_CONTRIBS.md](building_contribs.md)** for instructions.
 
-5. **Open the solution file:**
-   - Launch **Client_2016.sln** inside your `<your folder name>` directory using Visual Studio 2012 or 2022.
-   - If prompted with the “Review Solution Actions” window, press **Cancel**.
+   5. **Open the solution file:**
+      - Launch **Client_2016.sln** inside your `<your folder name>` directory using Visual Studio 2012 or 2022.
+      - If prompted with the “Review Solution Actions” window, press **Cancel**.
 
-6. **Set the Solution Configuration:**
-   - Choose **ReleaseStudio** to build **RobloxStudio**
-   - Choose **ReleaseRCC** to build **RCCService**
-   - Choose **Release** to build **WindowsClient**
-   - Other available configurations: **Debug**, **DebugRCC**, **DebugStudio**
+   6. **Set the Solution Configuration:**
+      - Choose **ReleaseStudio** to build **RobloxStudio**
+      - Choose **ReleaseRCC** to build **RCCService**
+      - Choose **Release** to build **WindowsClient**
+      - Other available configurations: **Debug**, **DebugRCC**, **DebugStudio**
 
-7. **Pre-build dependencies (required before building RCCService, RobloxStudio, or WindowsClient):**
-   - 3rd Party:
-     - `boost.static`
-     - `zlib`
-     - `libcurl` — follow **BUILDING_CONTRIBS.md** (skip if already compiled)
-     - `SDL2` — follow **BUILDING_CONTRIBS.md** (skip if already compiled)
-   - gSOAP:
-     - `soapcpp2`
-     - `wsdl2h`
-   - Shaders:
-     - `ShaderCompiler`
-   - Rendering:
-     - `LibOVR`
-   - Core Components:
-     - `qtnribbon`
-     - `sgCore`
-     - `CoreScriptConverter2` (only needed for **Release/Debug** when building **WindowsClient**)
+   7. **Pre-build dependencies (required before building RCCService, RobloxStudio, or WindowsClient):**
+      - 3rd Party:
+         - `boost.static`
+         - `zlib`
+         - `libcurl` — follow **BUILDING_CONTRIBS.md** (skip if already compiled)
+         - `SDL2` — follow **BUILDING_CONTRIBS.md** (skip if already compiled)
+      - gSOAP:
+         - `soapcpp2`
+         - `wsdl2h`
+      - Shaders:
+         - `ShaderCompiler`
+         - Rendering:
+         - `LibOVR`
+      - Core Components:
+         - `qtnribbon`
+         - `sgCore`
+         - `CoreScriptConverter2` (only needed for **Release/Debug** when building **WindowsClient**)
 
-8. **Build your desired project:**
-   - Right-click on **RCCService**, **RobloxStudio**, or **WindowsClient** in Solution Explorer
-   - Select **Build**
+   8. **Build your desired project:**
+      - Right-click on **RCCService**, **RobloxStudio**, or **WindowsClient** in Solution Explorer
+      - Select **Build**
 
 === "Building for Android"
 
-1. You need to install [Android Studio](https://developer.android.com/studio), do so.
-2. Install Android 28 NDK, Android 15 and 28 SDK from the Android Studio
-3. Find the local.properties file, Open in notepad and set the correct path to the SDK folder.
+   1. You need to install [Android Studio](https://developer.android.com/studio), do so.
+   2. Install Android 28 NDK, Android 15 and 28 SDK from the Android Studio
+   3. Find the local.properties file, Open in notepad and set the correct path to the SDK folder.
 
-* Build the libroblox.so for your platform, use the Legacy mode.
+   * Build the libroblox.so for your platform, use the Legacy mode.
 
-4. Pack the OBB Assets
-5. Install Java JDK 21
-6. Build the RobloxHybrid and after that build the APK!
+   4. Pack the OBB Assets
+   5. Install Java JDK 21
+   6. Build the RobloxHybrid and after that build the APK!
 
-
-
-
-✅ **You did it! You've successfully built from the source!**

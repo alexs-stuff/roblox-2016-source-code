@@ -3,6 +3,8 @@ site_name: Roblox 2016 Src docs
 repo_name: alexs-stuff/roblox-2016-source-code
 repo_url: https://github.com/alexs-stuff/roblox-2016-source-code
 
+
+
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -10,9 +12,12 @@ markdown_extensions:
   
 theme:
   name: material
+  icon:
+    logo: simple/roblox
   features:
     - toc.integrate
     - content.tabs.link
+    - navigation.footer
   palette: 
     - media: "(prefers-color-scheme)"
       toggle:
@@ -20,18 +25,25 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: red
+      accent: red
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: indigo
+      primary: red
+      accent: red
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/al-ex427
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/E8DnA6ZjJP
 nav:
     - Home: index.md
     - Building:
