@@ -8,7 +8,7 @@
 
 ---
 
---- "Building for Windows"
+=== "Building for Windows"
 
 1. **Open a Command Prompt with Administrator privileges** and clone the repository using [Git](https://git-scm.com/) like this:
    ```bash
@@ -61,7 +61,7 @@
    - Right-click on **RCCService**, **RobloxStudio**, or **WindowsClient** in Solution Explorer
    - Select **Build**
 
---- "Building for Android"
+=== "Building for Android"
 
 1. You need to install [Android Studio](https://developer.android.com/studio), do so.
 2. Install Android 28 NDK, Android 15 and 28 SDK from the Android Studio
@@ -74,6 +74,6 @@
 6. Build the RobloxHybrid and after that build the APK!
 
 
----
+
 
 ✅ **You did it! You've successfully built from the source!**

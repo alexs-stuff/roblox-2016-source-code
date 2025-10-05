@@ -10,11 +10,11 @@
 
 ### Qt
 
---- "Using the prebuilt copy"
+=== "Using the prebuilt copy"
 1. Download **Qt.7z** from https://gofile.io/d/Plze0w
 2. Extract it in the Contribs/ folder
 
---- "Building yourself (not recommended)""
+=== "Building yourself (not recommended)""
 1. Open **2012 x86 Native Tools Command Prompt**
 2. Navigate (`cd`) to:  
    `<your path>\<your folder name>\Contribs\Qt\4.8.5\win_VS2012`
@@ -102,8 +102,6 @@ To build libcurl as a `.LIB`:
 - Build the project.
 
 To build as a `.DLL`, no changes are needed — just build it as is.
-
----
 
 ✅ **That's it — you've compiled the contrib libraries!**  
 
