@@ -8,9 +8,11 @@ repo_url: https://github.com/alexs-stuff/roblox-2016-source-code
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
   
 theme:
   name: material

@@ -1,9 +1,9 @@
 # Building Contribs
 
-## 📌 Read This Before You Start
+??? note READ THIS BEFORE STARTING!!
 
-- `"<your path>"` is where your source is located (e.g., `C:\`)  
-- `"<your folder name>"` is the name of your source folder (e.g., `Trunk2016`)  
+- `"<your path>"` refers to the location where your source code resides (e.g., `C:\`)
+- `"<your folder name>"` refers to the name of the folder containing the source code (e.g., `Trunk2016`)
 - ⚠️ *Please note:* Technical knowledge is required. We cannot assist with every individual problem you encounter.
 
 ---
@@ -14,16 +14,16 @@
    1. Download **Qt.7z** from https://gofile.io/d/Plze0w
    2. Extract it in the Contribs/ folder
 
-=== "Building yourself (not recommended)"
+<!--=== "Building yourself (not recommended)"
    1. Open **2012 x86 Native Tools Command Prompt**
    2. Navigate (`cd`) to:  `<your path>\<your folder name>\Contribs\Qt\4.8.5\win_VS2012`
    3. Run the following command:
    ```sh
-      configure -make nmake -platform win32-msvc2012 -prefix <your path>\<your folder name>\Contribs\Qt\4.8.5\win_VS2012 -opensource -confirm-license -opengl desktop -nomake examples -nomake tests -webkit -xmlpatterns
+      configure -make nmake -platform win32-msvc2012 -prefix `<your path>`\\`<your folder name>`\\Contribs\\Qt\\4.8.5\\win_VS2012 -opensource -confirm-license -opengl desktop -nomake examples -nomake tests -webkit -xmlpatterns
    ```
    4. Type `nmake confclean` to make sure we're starting clean.
    5. When everything completes, run `nmake` and take a deep breath — this step takes **a lot** of time.
-
+-->
 ---
 
 ### Boost

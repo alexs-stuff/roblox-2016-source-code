@@ -1,6 +1,6 @@
 # Building
 
-## READ THIS BEFORE STARTING!!
+??? note READ THIS BEFORE STARTING!!
 
 - `"<your path>"` refers to the location where your source code resides (e.g., `C:\`)
 - `"<your folder name>"` refers to the name of the folder containing the source code (e.g., `Trunk2016`)
@@ -9,13 +9,6 @@
 ---
 
 
-=== "Open me in a new tab ..."
-
-=== "... or me ..."
-
-=== "... or even me"
-
-<!--
 === "Building for Windows"
 
    1. **Open a Command Prompt with Administrator privileges** and clone the repository using [Git](https://git-scm.com/) like this:
@@ -24,7 +17,7 @@
       ```
       - This method ensures you won’t need to redownload the source code repeatedly. **(Recommended)**
 
-   ## 1. Install VS2012 and optionally VS2022
+   2. Install VS2012 and optionally VS2022
       Download Visual Studio 2012 and Update 5 from https://gofile.io/d/Plze0w
       *(Optional)* [Visual Studio 2022](https://visualstudio.microsoft.com/tr/vs/) for a more modern IDE experience.
       > You can use either VS2012 or VS2022 to view the solution — both work fine.
@@ -80,5 +73,3 @@
    4. Pack the OBB Assets
    5. Install Java JDK 21
    6. Build the RobloxHybrid and after that build the APK!
-
--->
