@@ -22,6 +22,9 @@ theme:
     - toc.integrate
     - content.tabs.link
     - navigation.footer
+  font:
+    text: "Source Sans 3"
+    code: "Inconsolata"
   palette: 
     - media: "(prefers-color-scheme)"
       toggle:
