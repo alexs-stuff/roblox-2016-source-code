@@ -1,0 +1,3 @@
+[submodule "Contribs/boost"]
+	path = Contribs/boost
+	url = https://github.com/boostorg/boost
