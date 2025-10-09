@@ -73,26 +73,12 @@ UpgradeLog*.htm
 /Contribs/DSBaseClasses/Sources/Debug
 /Contribs/DSBaseClasses/Sources/Release
 
-# Custom ignore files and folders
-/App/bin/
-/Network/bin/
-/boostlibs/bin/
-/Base/bin/
-/Log/bin/
+
 /QTitanRibbon/roblox_build/
-/Installer/Bootstrapper/bin/Release
-/Installer/BootstrapperClient/bin/Release
-/Installer/BootstrapperQTStudio/bin/Release
-/Installer/BootstrapperRccService/bin/Release
-/Installer/Bootstrapper/bin/Debug
-/Installer/BootstrapperClient/bin/Debug
-/Installer/BootstrapperQTStudio/bin/Debug
-/Installer/BootstrapperRccService/bin/Debug
-/Installer/RobloxProxy/bin/Release
+
 /Installer/RobloxProxy/RobloxProxy_i.c
 /Installer/RobloxProxy/RobloxProxy_i.h
 /Installer/RobloxProxy/RobloxProxy_p.c
-/RobloxStudio/bin/
 /Rendering/LibOVR/Lib/Windows/
 /CoreScriptConverter2/tool/win32/*.exe
 /CoreScriptConverter2/tool/win32/*.lib
@@ -105,33 +91,16 @@ UpgradeLog*.htm
 /Rendering/ShaderCompiler/hlsl2glslfork/hlslang/MachineIndependent/Gen_hlslang_tab.cpp
 /Rendering/ShaderCompiler/ShaderCompiler*.exe
 /Contribs/SDL2/VisualC/Win32/Release/SDL2.lib
-/CSG/bin/Release/
-/CSG/sgCore_build/ms/Release/
-/QTitanRibbon/src/shared/ribbon/release/
-/Rendering/AppDraw/bin/Release/
-/RCCService/Win32/Release/
-/RCCService/gSOAP/gsoap-2.7/gsoap/VisualStudio2005/wsdl2h/wsdl2h/Release/
-/RCCService/gSOAP/gsoap-2.7/gsoap/VisualStudio2005/soapcpp2/soapcpp2/Release/
-/Rendering/GfxCore/bin/Release/
-/WindowsClient/Win32/Release/
-/Rendering/GfxBase/bin/Release/
-/Rendering/g3d/bin/graphics3D/Release/
-/Rendering/GfxRender/bin/Release/
-/Rendering/RbxG3D/bin/Release/
-/App.BulletPhysics/Release/
-/rbxsigner/INIFileParser/bin/
-/rbxsigner/KeyGenerator/bin/
-/rbxsigner/Signer/bin/
-/Roblox.RccServiceArbiter/bin/Release
-/Client.LegacyAssemblies/Roblox.Configuration/bin/Release
-/Client.LegacyAssemblies/Roblox.Common/bin/Release
-/Client.LegacyAssemblies/Grid/Arbiter/Roblox.Grid.Arbiter.Common/bin/Release
-/Client.LegacyAssemblies/Grid/Roblox.Grid.Client/bin/Release
-/Client.LegacyAssemblies/Grid/Roblox.Grid.Common/bin/Release
+
 /RobloxStudio/ui_*.h
 wsdl2h.exe
 soapcpp2.exe
 /Contribs/DSBaseClasses/Lib/
 /Contribs/Qt/
 
+# ignore built files
+/**/**/bin/**/*/
+
+/**/**/debug/*
+/**/**/release/*
 ## END OF GENERAL ##

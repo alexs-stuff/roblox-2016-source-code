@@ -8,6 +8,30 @@
 - Splash Screen and Copyright Dates updated.
 - Reverse-engineered several C# libraries and executables using **[ILSpy](https://github.com/icsharpcode/ILSpy/releases)** to make the source accessible.
 
+## Problems
+
+    - Undo/Redo does not handle `Color3` properties accurately; they often revert to the nearest `BrickColor` value.
+    - This can lead to inconsistencies, especially with `BodyColors`.
+
+## Solution Status
+
+TESTED ON VS2022 (WITH PROJECTS TARGETTING VS2012 - WINDOWS XP)
+> Some of these projects are not included as they are broken
+
+### Normal Solutions
+
+| Solution              | Tested  | Able to Compile  |
+| --------------------- | ------- | ---------------- |
+| Android               | [ ] No  | UNTESTED         |
+| App                   | [ ] No  | UNTESTED         |
+| App.BulletPhysics     | [ ] No  | UNTESTED         |
+| Base                  | [ ] No  | UNTESTED         |
+
+### 3rd Party Solutions
+
+### Rendering Solutions
+
+
 ## Todo
 
 - Backport/Implement **[Hitius](https://mega.nz/file/DnxUTAgI#52pYMEJyRFMMXVMAU71GboVWYxaTCv25eWB4QHFma6M)**, **[Graphictoria](https://mega.nz/file/e2RU0YbT#tGVrpYqR4fv6z7a4QQcdqT0nbmgdssGm3wGFd9jCiHA)** and **[Economy Simulator](https://mega.nz/file/76AyxJzC#fuKcKHTK6YI5S8zLyelsB7PIt0fVVTsWu9KTrgvXk2E)** Features
